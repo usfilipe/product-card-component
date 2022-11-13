@@ -19,7 +19,6 @@
 }
 body{
   background-color: var(--primary-color-2);
-
 }
 
 body,
@@ -29,7 +28,7 @@ textarea {
   font-size: 0.875rem
 }
 
-section{
+main{
 position: absolute;
 left: 50%;
 top: 50%;
@@ -38,13 +37,13 @@ transform: translate(-50%, -50%);
 }
 
 
-h1{
+header{
   font-family: "fraunces";
   font-size: 2rem;
   font-weight: 700;
 }
 
-h3{
+.perfume{
   color: var(--neutral-color-2);
   font-family: "montserrat";
   font-weight: 500;
@@ -53,9 +52,9 @@ h3{
 }
 
 img{
-  max-width:100%;
   max-height:100%;
 }
+
 
 .card {
   display: flex;
@@ -128,17 +127,16 @@ transition: .5s;
 
 }
 
-
-.img__mobile{
-  display: none;
-}
-
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.sr-only{
+  display: none;
 }
 
 
@@ -150,13 +148,10 @@ transition: .5s;
   height: 38.187rem;
 }
 
-.img__desktop {
-  display: none;
+img{
+  max-width:100%;
 }
 
-.img__mobile {
-  display: block;
-}
 
 .content {
   width: fit-content;
